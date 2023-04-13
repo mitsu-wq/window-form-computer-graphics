@@ -38,5 +38,11 @@ public partial class Form1 : Form
 
         Brush brush = new SolidBrush(Color.Black);
         g.FillRectangle(brush, 500, 200, 100, 50);
+
+        // светофор
+        g.FillRectangle(new SolidBrush(Color.DarkGray), 400, 500, 70, 180);
+        g.FillEllipse(new SolidBrush(Color.Red), 410, 510, 50, 50);
+        g.FillEllipse(new SolidBrush(Color.Yellow), 410, 565, 50, 50);
+        g.FillEllipse(new SolidBrush(Color.Green), 410, 620, 50, 50);
     }
 }
